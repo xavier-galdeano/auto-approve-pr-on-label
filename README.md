@@ -10,6 +10,10 @@ Auto pr approval on label
 
 **Required** LABEL. The label to auto approve pr.
 
+## Build
+
+`ncc build index.js --license licenses.txt`
+
 ## Example usage
 
 ```yaml
