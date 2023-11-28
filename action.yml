@@ -1,0 +1,12 @@
+name: "Auto approve PR on label"
+description: "Automatically approves PR when specific label is added"
+inputs:
+  GITHUB_TOKEN:
+    description: "Github token"
+    required: true
+  LABEL:
+    description: "Label that will be used"
+    required: true
+runs:
+  using: "node20"
+  main: "index.js"
