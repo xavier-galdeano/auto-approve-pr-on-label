@@ -17,7 +17,7 @@ Auto pr approval on label
 ## Example usage
 
 ```yaml
-uses: xavier-galdeano/auto-approve-pr-on-label@v1
+uses: xavier-galdeano/auto-approve-pr-on-label@v1.3
 with:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   LABEL: "critical"
