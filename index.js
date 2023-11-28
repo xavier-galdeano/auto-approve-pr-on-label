@@ -1,7 +1,7 @@
 const core = require("@actions/core");
 const github = require("@actions/github");
 
-try {
+const main = async () => {
   const githubToken = core.getInput("GITHUB_TOKEN");
   const labelToApprove = core.getInput("LABEL");
 
@@ -18,6 +18,10 @@ try {
       event: "APPROVE",
     });
   }
+};
+
+try {
+  main();
 } catch (error) {
   core.setFailed(error.message);
 }
